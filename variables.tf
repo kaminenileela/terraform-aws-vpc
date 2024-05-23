@@ -10,6 +10,7 @@ variable "environment" {
 
 variable "common_tags" {
     type = map
+
 }
 
 #### VPC ####
@@ -47,6 +48,54 @@ variable "public_subnet_cidr_tags" {
     type = map
     default = {}
 }
+
+variable "private_subnet_cidrs" {
+    type = list 
+    validation {
+        condition = length(var.private_subnet_cidrs) == 2
+        error_message = "please provide two valid private subnet CIDR"
+    }
+
+}
+
+variable "private_subnet_cidr_tags" {
+    type = map 
+    default = {}
+}
+
+variable "database_subnet_cidrs" {
+    type = list
+    validation {
+        condition = length(var.database_subnet_cidrs) == 2
+        error_message = "please provide two valid database subnet CIDR"
+    }
+}
+
+
+variable "database_subnet_cidr_tags" {
+    type = map 
+    default = {}
+}
+
+variable "aws_nat_gateway_tags" {
+    type = map 
+    default = {}
+}
+
+variable "public_route_table_tags" {
+    type = map 
+    default = {}
+}
+
+variable "private_route_table_tags" {
+    type = map 
+    default = {}
+}
+
+variable "database_route_table_tags" {
+    type = map 
+    default = {}
+} 
 
 
 
