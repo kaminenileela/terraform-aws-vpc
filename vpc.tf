@@ -67,8 +67,14 @@ resource "aws_subnet" "database" {
  )
 }
 
+
+
 resource "aws_eip" "eip" {
     domain = "vpc"
+
+     tags = {
+        Name = local.resource_name
+    }
 
 }
 
