@@ -77,6 +77,11 @@ variable "database_subnet_cidr_tags" {
     default = {}
 }
 
+variable "database_subnet_group_tags" {
+    type = map 
+    default = {}
+}
+
 variable "aws_nat_gateway_tags" {
     type = map 
     default = {}
@@ -96,6 +101,7 @@ variable "database_route_table_tags" {
     type = map 
     default = {}
 } 
+
 
 #### peering ###
 variable "is_peering_required" {
