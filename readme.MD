@@ -46,3 +46,9 @@ We are creating following resources.This module creates resources in first 2 ava
 * vpc_peering_tags (optional): Default value is empty. Type is map.
 
 ### Outputs
+
+* vpc_id: VPC ID
+* public_subnet_ids: A list of 2 public subnet IDS created.
+* private_subnet_ids: A list of 2 private subnet IDS created.
+* database_subnet_ids: A list of 2 database subnet IDS created.
+* aws_db_subnet_group_id: A database subnet group ID created.
