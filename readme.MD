@@ -52,3 +52,4 @@ We are creating following resources.This module creates resources in first 2 ava
 * private_subnet_ids: A list of 2 private subnet IDS created.
 * database_subnet_ids: A list of 2 database subnet IDS created.
 * aws_db_subnet_group_id: A database subnet group ID created.
+* igw_id: internet gateway ID created
