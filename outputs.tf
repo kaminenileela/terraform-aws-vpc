@@ -2,9 +2,9 @@
 #     value = data.aws_availability_zones.available.names
 # }
 
-output "vpc_info" {
-    value = aws_vpc.main
-}
+# output "vpc_info" {
+#     value = aws_vpc.main
+# }
 
 # output "vpc_id" {
 #     value = aws_vpc.main.id
@@ -22,9 +22,9 @@ output "vpc_info" {
 #     value = aws_subnet.database[*].id
 # }
 
-# output "aws_db_subnet_group_id" {
-#     value = aws_db_subnet_group.default.id
-# }
+output "aws_db_subnet_group_id" {
+    value = aws_db_subnet_group.default
+}
 
 # output "aws_db_subnet_group_name" {
 #     value = aws_db_subnet_group.default.name
