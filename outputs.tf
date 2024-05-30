@@ -1,10 +1,10 @@
-# output "azs" {
-#     value = data.aws_availability_zones.available.names
-# }
-
-output "vpc_info" {
-    value = aws_vpc.main
+output "azs" {
+    value = data.aws_availability_zones.available.names
 }
+
+# output "vpc_info" {
+#     value = aws_vpc.main
+# }
 
 # output "vpc_id" {
 #     value = aws_vpc.main.id
